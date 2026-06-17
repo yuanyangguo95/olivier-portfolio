@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olivier Fiset-Dubois Portfolio</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f6f4;
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 10%;
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      font-size: 52px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 22px;
+      color: #555;
+      max-width: 700px;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 12px;
+      padding: 10px 16px;
+      border: 1px solid #222;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #222;
+      background: #fff;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 24px;
+    }
+
+    .software-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    .example {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 8px;
+      margin-right: 6px;
+      padding: 5px 10px;
+      background: #eeeeee;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 40px 10%;
+      background: #1f1f1f;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Olivier Fiset-Dubois</h1>
+    <p>
+      Architectural Technologist / CAD Technician creating technical drawings,
+      BIM models, construction details, and architectural visualizations.
+    </p>
+
+    <nav>
+      <a href="#autocad">AutoCAD</a>
+      <a href="#revit">Revit / BIM</a>
+      <a href="#enscape">Enscape</a>
+      <a href="#excel">Excel</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Software Examples</h2>
+
+    <div class="software-grid">
+
+      <div class="card" id="autocad">
+        <h3>AutoCAD</h3>
+        <p>
+          Technical drafting, construction details, wall assemblies,
+          electrical plans, and bathroom elevations.
+        </p>
+
+        <div class="example">
+          <strong>Multi-Residential Section & Details</strong>
+          <p>Building section with enlarged construction details and material annotations.</p>
+          <span class="tag">Technical Drawing</span>
+          <span class="tag">Construction Detail</span>
+        </div>
+
+        <div class="example">
+          <strong>Electrical Plan</strong>
+          <p>Accessible apartment electrical layout with dimensions and fixture placement.</p>
+          <span class="tag">Electrical Plan</span>
+          <span class="tag">Accessibility</span>
+        </div>
+
+        <div class="example">
+          <strong>Bathroom Elevations</strong>
+          <p>Interior elevations showing fixtures, dimensions, and accessible conversion planning.</p>
+          <span class="tag">Interior Elevation</span>
+          <span class="tag">Dimensioning</span>
+        </div>
+      </div>
+
+      <div class="card" id="revit">
+        <h3>Revit / BIM</h3>
+        <p>
+          BIM modeling, building coordination, collaborative design,
+          and architectural documentation.
+        </p>
+
+        <div class="example">
+          <strong>Green Tree Ground Floor</strong>
+          <p>BIM collaboration project with civil engineering students using Revit.</p>
+          <span class="tag">BIM</span>
+          <span class="tag">Team Project</span>
+        </div>
+
+        <div class="example">
+          <strong>Kuujjuaq Sustainable District</strong>
+          <p>Site plan, building relationship, circulation, and sustainable design strategy.</p>
+          <span class="tag">Site Planning</span>
+          <span class="tag">Documentation</span>
+        </div>
+      </div>
+
+      <div class="card" id="enscape">
+        <h3>Enscape</h3>
+        <p>
+          Architectural rendering, interior views, exterior views,
+          material presentation, and atmosphere.
+        </p>
+
+        <div class="example">
+          <strong>Ergo Hütte Exterior & Interior Renders</strong>
+          <p>Chalet visualization showing terrace, natural materials, and open interior space.</p>
+          <span class="tag">Rendering</span>
+          <span class="tag">Residential Design</span>
+        </div>
+
+        <div class="example">
+          <strong>Green Tree Interior View</strong>
+          <p>Interior rendering with biophilic design, natural light, and shared living space.</p>
+          <span class="tag">Interior Render</span>
+          <span class="tag">Biophilic Design</span>
+        </div>
+      </div>
+
+      <div class="card" id="excel">
+        <h3>Excel</h3>
+        <p>
+          Technical calculations, thermal envelope analysis,
+          and visual communication of building performance.
+        </p>
+
+        <div class="example">
+          <strong>Thermal Gradient Graph</strong>
+          <p>Envelope temperature gradient based on thermal resistance and vapor calculations.</p>
+          <span class="tag">Building Envelope</span>
+          <span class="tag">Technical Analysis</span>
+        </div>
+
+        <div class="example">
+          <strong>RSI / ITS Wall Assembly Data</strong>
+          <p>Wall, floor, and roof composition data for code-related performance documentation.</p>
+          <span class="tag">Code</span>
+          <span class="tag">Envelope</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: olifiso@gmail.com</p>
+    <p>Location: Belgium / Canada</p>
+  </section>
+
+  <footer>
+    <p>© Olivier Fiset-Dubois — Architectural Portfolio</p>
+  </footer>
+
+</body>
+</html>
